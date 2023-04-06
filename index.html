@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Model App</title>
+    <link rel="favicon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- First circle -->
+    <div class="Circle1"></div>
+    
+    <!-- Second Circle -->
+    <div class="Circle2"></div>
+    
+    <!-- Container -->
+    <div class="container">
+            <!-- Main Content -->
+            <div class="content">
+                <!-- Image container -->
+                <div >
+                    <img src="./assets/Profile(leetcode).png" loading="lazy" alt="">
+                </div>
+                <div class="username">
+                    <h2>Akash Bhardwaj</h2>
+                </div>
+                <div class="designation">
+                    <h3>Web Developer</h3>
+                </div>
+
+                <!-- buttons container -->
+                <div class="bottom-group">
+                    <button onclick="openModal()" class="btn-share btn-card">
+                      <i class="fa-solid fa-share"></i>
+                      <div>share my profile</div>
+                    </button>
+            
+                    <button class="btn-follow btn-card">Follow me</button>
+                </div>
+
+            </div>
+    </div>
+
+    <!-- Model Content -->
+    <div class="modal">
+        <div class="modal-header">
+          <h1>Share My Profile</h1>
+          <div>
+            <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+          </div>
+        </div>
+    
+    
+        <div>
+    
+          <h3>Share this via</h3>
+    
+          
+          <div class="icon-container">
+            <a href="#" class="icon" id="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/97-akash-bhardwaj/" target="_blank" class="icon" id="linkedin">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="icon" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/AKASH9718" target="_blank" class="icon" id="github">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="icon" id="telegram">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+    
+    
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" onclick="closeModal()"></div>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
